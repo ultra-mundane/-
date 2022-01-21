@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .box {
+          float: left;
+          width: 33.33%;
+          padding: 50px;
+        }
+        
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>网格框</h1>
+        
+        <p>并排浮动的框：</p>
+        
+        <div class="clearfix">
+          <div class="box" style="background-color:#bbb">
+          <p>框中的一些文本。</p>
+          </div>
+          <div class="box" style="background-color:#ccc">
+          <p>框中的一些文本。</p>
+          </div>
+          <div class="box" style="background-color:#ddd">
+          <p>框中的一些文本。</p>
+          </div>
+        </div>
+</body>
+</html>
